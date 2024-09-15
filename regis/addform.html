@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="text"], input[type="date"], select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Application Form</h1>
+    <form>
+        <table>
+            <tr>
+                <th colspan="2">1. Selection Board</th>
+            </tr>
+            <tr>
+                <td>No. & Place</td>
+                <td><input type="text" name="selection_board"></td>
+            </tr>
+            <tr>
+                <td>Batch No.</td>
+                <td><input type="text" name="batch_no"></td>
+            </tr>
+            <tr>
+                <td>Chest No.</td>
+                <td><input type="text" name="chest_no"></td>
+            </tr>
+            <tr>
+                <td>UPSC/Other Roll No.</td>
+                <td><input type="text" name="roll_no"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="2">2. Personal Information</th>
+            </tr>
+            <tr>
+                <td>Name (in capital)</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Father's Name</td>
+                <td><input type="text" name="father_name"></td>
+            </tr>
+            <tr>
+                <td>Place of Maximum Residence</td>
+                <td><input type="text" name="max_residence"></td>
+            </tr>
+            <tr>
+                <td>Place of Present Residence</td>
+                <td><input type="text" name="present_residence"></td>
+            </tr>
+            <tr>
+                <td>Place of Permanent Residence</td>
+                <td><input type="text" name="permanent_residence"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="2">3. Family Details</th>
+            </tr>
+            <tr>
+                <td>State & District</td>
+                <td><input type="text" name="state_district"></td>
+            </tr>
+            <tr>
+                <td>Religion</td>
+                <td><input type="text" name="religion"></td>
+            </tr>
+            <tr>
+                <td>SC/ST/OBC/GEN</td>
+                <td><input type="text" name="sc_st"></td>
+            </tr>
+            <tr>
+                <td>Mother Tongue</td>
+                <td><input type="text" name="mother_tongue"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td>Marital Status</td>
+                <td>
+                    <select name="marital_status">
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="widower">Widower</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="4">4. Parents/Guardian Details</th>
+            </tr>
+            <tr>
+                <td>Particulars</td>
+                <td>Education</td>
+                <td>Occupation</td>
+                <td>Income per Month</td>
+            </tr>
+            <tr>
+                <td>Father</td>
+                <td><input type="text" name="father_education"></td>
+                <td><input type="text" name="father_occupation"></td>
+                <td><input type="text" name="father_income"></td>
+            </tr>
+            <tr>
+                <td>Mother</td>
+                <td><input type="text" name="mother_education"></td>
+                <td><input type="text" name="mother_occupation"></td>
+                <td><input type="text" name="mother_income"></td>
+            </tr>
+            <tr>
+                <td>Guardian</td>
+                <td><input type="text" name="guardian_education"></td>
+                <td><input type="text" name="guardian_occupation"></td>
+                <td><input type="text" name="guardian_income"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="6">5. Siblings Details</th>
+            </tr>
+            <tr>
+                <td>Particulars</td>
+                <td>Education</td>
+                <td>Occupation</td>
+                <td>Income per Month</td>
+            </tr>
+            <tr>
+                <td>Elder Brother/Sister</td>
+                <td><input type="text" name="elder_sibling_education"></td>
+                <td><input type="text" name="elder_sibling_occupation"></td>
+                <td><input type="text" name="elder_sibling_income"></td>
+            </tr>
+            <tr>
+                <td>Younger Brother/Sister</td>
+                <td><input type="text" name="younger_sibling_education"></td>
+                <td><input type="text" name="younger_sibling_occupation"></td>
+                <td><input type="text" name="younger_sibling_income"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="6">6. Educational Record</th>
+            </tr>
+            <tr>
+                <td>Qualification</td>
+                <td>Name of Institution</td>
+                <td>Board/University</td>
+                <td>Year</td>
+                <td>Division & Marks%</td>
+                <td>Medium of Instruction</td>
+            </tr>
+            <tr>
+                <td>Matriculation</td>
+                <td><input type="text" name="matric_institution"></td>
+                <td><input type="text" name="matric_board"></td>
+                <td><input type="text" name="matric_year"></td>
+                <td><input type="text" name="matric_marks"></td>
+                <td><input type="text" name="matric_medium"></td>
+            </tr>
+            <tr>
+                <td>10+2</td>
+                <td><input type="text" name="plus2_institution"></td>
+                <td><input type="text" name="plus2_board"></td>
+                <td><input type="text" name="plus2_year"></td>
+                <td><input type="text" name="plus2_marks"></td>
+                <td><input type="text" name="plus2_medium"></td>
+            </tr>
+            <tr>
+                <td>Graduation</td>
+                <td><input type="text" name="graduation_institution"></td>
+                <td><input type="text" name="graduation_board"></td>
+                <td><input type="text" name="graduation_year"></td>
+                <td><input type="text" name="graduation_marks"></td>
+                <td><input type="text" name="graduation_medium"></td>
+            </tr>
+            <tr>
+                <td>Post Graduation</td>
+                <td><input type="text" name="postgraduation_institution"></td>
+                <td><input type="text" name="postgraduation_board"></td>
+                <td><input type="text" name="postgraduation_year"></td>
+                <td><input type="text" name="postgraduation_marks"></td>
+                <td><input type="text" name="postgraduation_medium"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="2">7. Physical Details</th>
+            </tr>
+            <tr>
+                <td>Age (Years & Months)</td>
+                <td><input type="text" name="age"></td>
+            </tr>
+            <tr>
+                <td>Height (in Metres)</td>
+                <td><input type="text" name="height"></td>
+            </tr>
+            <tr>
+                <td>Weight (in Kilograms)</td>
+                <td><input type="text" name="weight"></td>
+            </tr>
+            <tr>
+                <td>Present Occupation</td>
+                <td><input type="text" name="Occupation"></td>
+            </tr>
+
+            <table>
+                <tr>
+                    <th colspan="2">8. N.C.C. Training</th>
+                </tr>
+                <tr>
+                    <td>Training</td>
+                    <td>
+                        <input type="radio" name="ncc_training" value="yes"> Yes
+                        <input type="radio" name="ncc_training" value="no"> No
+                    </td>
+                </tr>
+                <tr>
+                    <td>Total Training</td>
+                    <td><input type="text" name="total_training"></td>
+                </tr>
+                <tr>
+                    <td>Wing</td>
+                    <td><input type="text" name="wing"></td>
+                </tr>
+                <tr>
+                    <td>Division</td>
+                    <td><input type="text" name="division"></td>
+                </tr>
+                <tr>
+                    <td>Certificate Obtained</td>
+                    <td><input type="text" name="certificate"></td>
+                </tr>
+            </table>
+    
+            <table>
+                <tr>
+                    <th colspan="4">9. Participation in Games & Sports</th>
+                </tr>
+                <tr>
+                    <td>Game/Sport</td>
+                    <td>Period of Participation</td>
+                    <td>Represented School/College/University</td>
+                    <td>Outstanding Achievement</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="game_sport"></td>
+                    <td><input type="text" name="participation_period"></td>
+                    <td><input type="text" name="represented"></td>
+                    <td><input type="text" name="achievement"></td>
+                </tr>
+            </table>
+    
+            <table>
+                <tr>
+                    <th colspan="3">10. Hobbies/Interests & Extra-curricular Activities</th>
+                </tr>
+                <tr>
+                    <td>Hobbies/Interests</td>
+                    <td><input type="text" name="hobbies"></td>
+                </tr>
+                <tr>
+                    <td>Activity Group</td>
+                    <td>Duration of Participation</td>
+                    <td>Outstanding Achievement</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="activity_group"></td>
+                    <td><input type="text" name="activity_duration"></td>
+                    <td><input type="text" name="activity_achievement"></td>
+                </tr>
+            </table>
+    
+            <table>
+                <tr>
+                    <th colspan="2">11. Commission Details</th>
+                </tr>
+                <tr>
+                    <td>Nature of Commission</td>
+                    <td><input type="text" name="commission_nature"></td>
+                </tr>
+                <tr>
+                    <td>Choice of Service</td>
+                    <td><input type="text" name="service_choice"></td>
+                </tr>
+            </table>
+    
+            <table>
+                <tr>
+                    <th colspan="2">12. Chances for Commission</th>
+                </tr>
+                <tr>
+                    <td>Number of Chances</td>
+                    <td><input type="text" name="chances"></td>
+                </tr>
+            </table>
+    
+            <input type="submit" value="Submit">
+        </form>
